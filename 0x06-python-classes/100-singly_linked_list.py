@@ -18,7 +18,7 @@ class Node:
     @property
     def data(self):
         """Get/set the data of the Node."""
-        return (self.__data)
+[I        return (self.__data)
 
     @data.setter
     def data(self, value):
@@ -36,7 +36,7 @@ class Node:
         if not isinstance(value, Node) and value is not None:
             raise TypeError("next_node must be a Node object")
         self.__next_node = value
-[I
+
 
 class SinglyLinkedList:
     """Represent a singly-linked list."""
